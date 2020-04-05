@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup Project
+1. create this project
+````
+npx create-react-app 
+````
+
+2. IE 11 지원하기
+````
+yarn add react-app-polyfill
+
+// These must be the first lines in src/index.js
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+
+// package.json
+browserslist 에 IE 11 추가
+````
+
 ## Available Scripts
 
 In the project directory, you can run:
